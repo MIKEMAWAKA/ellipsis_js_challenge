@@ -1,0 +1,36 @@
+<app-header-series-component></app-header-series-component>
+
+<div  *ngIf="!loading; else elseTemplate">
+  <div class="text-center text-center text-xs-center "  *ngFor="let series of Series   let i=index" style="display: inline-block;width: fit-content;padding:10px;align-content: center;align-self: center;text-align:center">
+
+
+
+
+    <div *ngIf="series.length !==0" style="width:160px ;margin-top: 10px;">
+      <img style="height: 220px; background-color: black;object-fit: fill;
+      width:160px;" src="{{ series.images[ 'Poster Art' ].url }}"
+  
+  onerror="this.src='assets/placeholder.png';"
+  
+        alt=""
+      />
+      <h5 style="font-size: 16px;">{{ series.title }}</h5>
+    </div>
+  
+  
+  </div>
+</div>
+
+
+<ng-template #elseTemplate>
+
+  <div style="width:160px ;margin-top: 10px; margin-left: 90px;margin-top: 20px;margin-bottom: 50px;">
+     Loading...
+    </div>
+  
+</ng-template>
+
+
+
+
+

@@ -1,0 +1,10 @@
+.bgImg{
+
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 220px;
+  width:160px;
+  background-color: #1e1e1e;
+  background-size: contain;
+}

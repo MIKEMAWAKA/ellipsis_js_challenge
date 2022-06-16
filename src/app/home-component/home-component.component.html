@@ -1,0 +1,36 @@
+
+<app-header-home-component></app-header-home-component>
+
+<div  class=""   style=" display: flex;
+flex-direction: row;   padding:10px;padding-left: 50px;">
+  <div style="width: 160px;" [routerLink]="['/series']">
+    <!-- <img style="height: 300px;width:230px;background-color: black;"
+    [src]="'assets/placeholder.png'"
+      alt=""
+    /> -->
+    <div class="bgImg" style="background-image: url('assets/placeholder.png') ">
+
+      <h1 style="  position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);color: white;">Series</h1>
+    </div>
+    <h5 class="text-center" style="padding-top: 10px;font-size: 16px ">Popular Series</h5>
+  </div>
+
+  <div style="display:inline-block;width: 160px;margin-left: 20px;" [routerLink]="['/movies']">
+    <!-- <img style="height: 300px;width:230px;background-color: black;"
+    [src]="'assets/placeholder.png'"
+      alt=""
+    /> -->
+    <div class="bgImg" style="background-image: url('assets/placeholder.png') ">
+
+      <h1 style="  position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);color: white;">movies</h1>
+    </div>
+    <h5 style="padding-top: 10px; font-size: 16px;">Popular Movies</h5>
+  </div>
+</div>
+

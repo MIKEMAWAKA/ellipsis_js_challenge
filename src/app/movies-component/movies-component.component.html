@@ -1,0 +1,39 @@
+<app-header-movie-component></app-header-movie-component>
+
+
+
+
+<div  *ngIf="!loading; else elseTemplate">
+  <div *ngFor="let movies of Movies   let i=index" style="display: inline-block;padding:10px;">
+
+
+
+
+    <div style="width:160px ;margin-top: 10px;">
+      <img style="height: 220px; background-color: black;
+      width:160px;" src="{{ movies.images[ 'Poster Art' ].url }}"
+  
+  onerror="this.src='assets/placeholder.png';"
+  
+        alt=""
+      />
+      <h5 style="font-size: 14px;">{{ movies.title }}</h5>
+    </div>
+  </div>
+</div>
+
+
+<ng-template #elseTemplate>
+
+  <div style="width:160px ;margin-top: 10px; margin-left: 90px;margin-top: 20px;margin-bottom: 50px;">
+     Loading...
+    </div>
+  
+</ng-template>
+
+
+
+
+
+
+
