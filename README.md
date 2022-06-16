@@ -24,4 +24,20 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page
+
+
+
+How did you decide on the technical and architectural choices used as part of your solution?
+ -First check what the Ui and the data ihave
+ - then divide the project into small part called component
+ - then fesign the ui 
+ - then fetch the data
+ - -feed the data to theui
+-
+Are there any improvements you could make to your submission?
+-Yes Icould make the your and the design look more beutfull 
+
+
+What would you do differently if you were allocated more time?
+- Improve the design
